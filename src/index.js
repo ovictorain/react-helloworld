@@ -2,11 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import LoginControl from './LoginControl';
+import AndOperator from './AndOperator';
 import registerServiceWorker from './registerServiceWorker';
 
-
+const messages = ['React', 'Re: React', 'Re:Re: React'];
 ReactDOM.render(
-  // Try changing to isLoggedIn={true}:
-  <LoginControl />, document.getElementById('root'));
+  <AndOperator unreadMessages={messages} />, document.getElementById('root'));
 registerServiceWorker();
