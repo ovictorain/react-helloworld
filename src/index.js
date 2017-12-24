@@ -5,7 +5,10 @@ import App from './App';
 import LoginControl from './LoginControl';
 import registerServiceWorker from './registerServiceWorker';
 
-const messages = ['React', 'Re: React', 'Re:Re: React'];
+const numbers = [1, 2, 3, 4, 5];
+const listItems = numbers.map((number) =>
+  <li>{number}</li>
+);
 ReactDOM.render(
-  <LoginControl />, document.getElementById('root'));
+  <ul>{listItems}</ul>, document.getElementById('root'));
 registerServiceWorker();
