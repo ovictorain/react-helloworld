@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Welcome from './ClassWelcome';
 import './App.css';
 
 class App extends Component {
@@ -10,7 +11,7 @@ class App extends Component {
         <h2>It is {new Date().toLocaleTimeString()}.</h2>
       </div>
     );
-    
+
     return (
       <div className="App">
         <header className="App-header">
@@ -18,7 +19,9 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <div className="App-intro">
-            {element}
+          <Welcome name="Sara" />
+          <Welcome name="Cahal" />
+          <Welcome name="Edite" />
         </div>
       </div>
     );
