@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import FlavorForm from './FlavorForm';
+import Reservation from './Reservation';
 import registerServiceWorker from './registerServiceWorker';
 
 
 ReactDOM.render(
-   <FlavorForm />, document.getElementById('root'));
+   <Reservation />, document.getElementById('root'));
 registerServiceWorker();
