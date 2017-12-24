@@ -7,6 +7,30 @@ class Clock extends React.Component{
     this.state = {date: new Date()};
   }
 
+  componentDidMount() {
+    this.timerID = setInterval(
+      () => this.tick(),
+      1000
+    )
+  }
+
+  /* Cladd 里不允许放变量。。。只能放方法 */
+  // const a = 1;
+  // const tick = () => {
+  //   this.setState({
+  //     date: new Date()
+  //   })
+  // }
+  tick() {
+    this.setState({
+      date: new Date()
+    });
+  }
+
+  componentWillUnmount() {
+     clearInterval(this.timerID);
+  }
+
   render(){
     return (
       <div>
