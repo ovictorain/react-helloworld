@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import DebounceSearchbox from './DebounceSearchbox';
+import AFTScrollListener from './AFTScrollListener';
 import registerServiceWorker from './registerServiceWorker';
 
 
-ReactDOM.render(<DebounceSearchbox defaultValue="victor" onChange={() => {console.log(`Debouncing ensures that a function will not be executed until after a certain amount of time has passed since it was last called`);}}/>, document.getElementById('root'));
+ReactDOM.render(<AFTScrollListener onScroll={() => {console.log(`requestAnimationFrame is a way of queuing a function to be executed in the browser at the optimal time for rendering performance.
+  A function that is queued with requestAnimationFrame will fire in the next frame. `);}}/>, document.getElementById('root'));
 registerServiceWorker();

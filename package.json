@@ -6,6 +6,7 @@
     "lodash": "^4.17.4",
     "lodash.debounce": "^4.0.8",
     "lodash.throttle": "^4.1.1",
+    "raf-schd": "^2.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17"
