@@ -2,10 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import ThrottleLoadMoreButton from './ThrottleLoadMoreButton';
+import DebounceSearchbox from './DebounceSearchbox';
 import registerServiceWorker from './registerServiceWorker';
 
 
-ReactDOM.render(<ThrottleLoadMoreButton loadMore={() => {console.log(`Throttling prevents a function from being called more than once in a given window of time.
-The example below throttles a “click” handler to prevent calling it more than once per second.`);}}/>, document.getElementById('root'));
+ReactDOM.render(<DebounceSearchbox defaultValue="victor" onChange={() => {console.log(`Debouncing ensures that a function will not be executed until after a certain amount of time has passed since it was last called`);}}/>, document.getElementById('root'));
 registerServiceWorker();
